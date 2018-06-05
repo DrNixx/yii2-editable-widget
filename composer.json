@@ -1,9 +1,8 @@
 {
-    "name": "2amigos/yii2-editable-widget",
+    "name": "drnixx/yii2-editable-widget",
     "description": "X-Editable widget for Yii2.",
     "type": "yii2-extension",
     "keywords": [
-        "2amigos",
         "yii",
         "yii2",
         "yii 2",
@@ -26,8 +25,14 @@
         "source": "https://github.com/2amigos/yii2-editable-widget"
     },
     "require": {
-        "yiisoft/yii2": "~2.0.5",
-        "yiisoft/yii2-bootstrap": "~2.0.0",
+        "php": ">=5.6.0",
+
+        "yiisoft/yii2": "~2.0.6",
+        "yiisoft/yii2-bootstrap": "2.1.x-dev",
+
+        "bower-asset/bootstrap": "~4.0.0",
+        "bower-asset/popper.js": "~1.12.0",
+
         "bower-asset/select2": "~4.0"
     },
     "require-dev": {
@@ -47,5 +52,11 @@
         "asset-installer-paths": {
             "bower-asset-library": "vendor/bower"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }

@@ -302,7 +302,7 @@
         /**
          @property tpl
          **/
-        tpl: '<div class="input-group date"><input type="text" class="form-control" readonly><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span></div>',
+        tpl: '<div class="input-group date"><input type="text" class="form-control" readonly><span class="input-group-addon"><span class="fa fa-calendar"></span></span></div>',
         /**
          @property inputclass
          @default 'input-medium'

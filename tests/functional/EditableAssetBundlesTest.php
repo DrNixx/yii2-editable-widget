@@ -17,7 +17,7 @@ class EditableAssetBundlesTest extends TestCase
         $view = $this->getView();
         $this->assertEmpty($view->assetBundles);
         TestEditableAddressAsset::register($view);
-        $this->assertEquals(6, count($view->assetBundles));
+        $this->assertEquals(7, count($view->assetBundles));
         $this->assertArrayHasKey('yii\\web\\JqueryAsset', $view->assetBundles);
         $this->assertTrue(
             $view->assetBundles['tests\\data\\overrides\\TestEditableAddressAsset'] instanceof AssetBundle
@@ -33,7 +33,7 @@ class EditableAssetBundlesTest extends TestCase
         $view = $this->getView();
         $this->assertEmpty($view->assetBundles);
         TestEditableComboDateAsset::register($view);
-        $this->assertEquals(6, count($view->assetBundles));
+        $this->assertEquals(7, count($view->assetBundles));
         $this->assertArrayHasKey('yii\\web\\JqueryAsset', $view->assetBundles);
         $this->assertTrue(
             $view->assetBundles['tests\\data\\overrides\\TestEditableComboDateAsset'] instanceof AssetBundle
@@ -49,7 +49,7 @@ class EditableAssetBundlesTest extends TestCase
         $view = $this->getView();
         $this->assertEmpty($view->assetBundles);
         TestEditableDatePickerAsset::register($view);
-        $this->assertEquals(6, count($view->assetBundles));
+        $this->assertEquals(7, count($view->assetBundles));
         $this->assertArrayHasKey('yii\\web\\JqueryAsset', $view->assetBundles);
         $this->assertTrue(
             $view->assetBundles['tests\\data\\overrides\\TestEditableDatePickerAsset'] instanceof AssetBundle
@@ -65,7 +65,7 @@ class EditableAssetBundlesTest extends TestCase
         $view = $this->getView();
         $this->assertEmpty($view->assetBundles);
         TestEditableDateTimePickerAsset::register($view);
-        $this->assertEquals(6, count($view->assetBundles));
+        $this->assertEquals(7, count($view->assetBundles));
         $this->assertArrayHasKey('yii\\web\\JqueryAsset', $view->assetBundles);
         $this->assertTrue(
             $view->assetBundles['tests\\data\\overrides\\TestEditableDateTimePickerAsset'] instanceof AssetBundle
@@ -81,7 +81,7 @@ class EditableAssetBundlesTest extends TestCase
         $view = $this->getView();
         $this->assertEmpty($view->assetBundles);
         TestEditableWysiHtml5Asset::register($view);
-        $this->assertEquals(6, count($view->assetBundles));
+        $this->assertEquals(7, count($view->assetBundles));
         $this->assertArrayHasKey('yii\\web\\JqueryAsset', $view->assetBundles);
         $this->assertTrue(
             $view->assetBundles['tests\\data\\overrides\\TestEditableWysiHtml5Asset'] instanceof AssetBundle
@@ -97,7 +97,7 @@ class EditableAssetBundlesTest extends TestCase
         $view = $this->getView();
         $this->assertEmpty($view->assetBundles);
         TestEditableSelect2Asset::register($view);
-        $this->assertEquals(7, count($view->assetBundles));
+        $this->assertEquals(8, count($view->assetBundles));
         $this->assertArrayHasKey('yii\\web\\JqueryAsset', $view->assetBundles);
         $this->assertTrue(
             $view->assetBundles['tests\\data\\overrides\\TestEditableSelect2Asset'] instanceof AssetBundle
